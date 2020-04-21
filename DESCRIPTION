@@ -14,5 +14,6 @@ LazyData: true
 Imports:
     gmailr (>= 0.7.1),
     crayon (>= 1.3.4),
-    stringr (>= 1.3.1)
+    stringr (>= 1.3.1),
+    badger
 RoxygenNote: 7.1.0
