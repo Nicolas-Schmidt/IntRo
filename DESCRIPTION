@@ -1,0 +1,18 @@
+Package: IntRo
+Type: Package
+Title: Auto-Evaluacion de los ejericios del curso IntRo
+Version: 1.4.0
+Author: Nicolas Schmidt [aut, cre]
+Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>                
+Description: Conjunto de funciones que permiten auto evaluar un conjunto de ejercicios
+    del Curso Introduccion al Software estadistico R y hacer la correccion de los mismos. 
+License: GPL-2
+URL: https://nicolas-schmidt.github.io/IntRo/
+BugReports: https://github.com/Nicolas-Schmidt/IntRo/issues
+Encoding: UTF-8
+LazyData: true
+Imports:
+    gmailr (>= 0.7.1),
+    crayon (>= 1.3.4),
+    stringr (>= 1.3.1)
+RoxygenNote: 7.1.0
