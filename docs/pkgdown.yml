@@ -2,5 +2,8 @@ pandoc: 2.7.2
 pkgdown: 1.5.1
 pkgdown_sha: ~
 articles: []
-last_built: 2020-04-21T17:17Z
+last_built: 2020-04-21T18:15Z
+urls:
+  reference: https://nicolas-schmidt.github.io/IntRo//reference
+  article: https://nicolas-schmidt.github.io/IntRo//articles
 

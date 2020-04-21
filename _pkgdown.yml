@@ -1,0 +1,12 @@
+url: https://nicolas-schmidt.github.io/IntRo/
+home:
+  title: Introducón al software estadístico R
+
+destination: docs
+
+toc:
+  depth: 2
+template:
+  params:
+    bootswatch: flatly
+    ganalytics: UA-122515754-4
