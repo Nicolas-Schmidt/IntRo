@@ -8,5 +8,7 @@ toc:
   depth: 2
 template:
   params:
-    bootswatch: flatly
-    ganalytics: UA-122515754-4
+    bootswatch: cosmo
+    ganalytics: UA-54095998-3
+
+
