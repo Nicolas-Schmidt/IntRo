@@ -5,6 +5,9 @@
 
 <!-- badges: start -->
 
+[![R build
+status](https://github.com/Nicolas-Schmidt/IntRo/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/IntRo/actions)
+[![](https://img.shields.io/badge/devel%20version-1.4.0-blue.svg)](https://github.com/Nicolas-Schmidt/IntRo)
 <!-- badges: end -->
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
