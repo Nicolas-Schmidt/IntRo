@@ -42,10 +42,10 @@ Ejercicios:
 
 <br />
 
-#### *_Docentes_*
+#### *_Docente_*
 
-El docente del curso es Nicolás Schmidt. Mail: <nicoschlab@gmail.com>,
-<nschmidt@cienciassociales.edu.uy>
+Nicolás Schmidt.  
+Mail: <nicoschlab@gmail.com>, <nschmidt@cienciassociales.edu.uy>
 
 <br />
 
