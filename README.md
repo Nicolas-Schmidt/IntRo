@@ -44,8 +44,6 @@ Ejercicios:
 
 #### *_Docentes_*
 
-El docente responsable del curso es Juan Andrés Moraes. Mail:
-<juan.a.moraes.1@nd.edu>  
 El docente del curso es Nicolás Schmidt. Mail: <nicoschlab@gmail.com>,
 <nschmidt@cienciassociales.edu.uy>
 
