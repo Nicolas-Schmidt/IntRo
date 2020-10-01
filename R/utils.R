@@ -17,9 +17,6 @@ escala <- function(puntaje){
         nota
 }
 
-
-
-
 vars <- c(
         paste0('df', 1:8),
         paste0('lista', 1:6),
