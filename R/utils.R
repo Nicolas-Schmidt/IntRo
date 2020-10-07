@@ -30,9 +30,7 @@ if(getRversion() >= "2.15.1"){
 }
 
 version <- function(){
-        suppressMessages(
-                bad <- badger::badge_devel("Nicolas-Schmidt/IntRo", "blue")
-        )
+        suppressMessages(bad <- badger::badge_devel("Nicolas-Schmidt/IntRo", "blue"))
         unlist(strsplit(bad, "-"))[2]
 }
 
