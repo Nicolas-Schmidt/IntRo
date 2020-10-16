@@ -16,7 +16,7 @@
 #'     \code{package} este sera incorporado al muestreo.
 #'
 #' @param library por defecto es \code{TRUE}. Esto significa que el paquete seleccionado
-#'    queda cargado en la rurta de busqued de nombres de R. Caso contrario el paquete no
+#'    queda cargado en la rurta de busqueda de nombres de R. Caso contrario el paquete no
 #'    va a quedar cargado.
 #'
 #' @return Esta funcion va a imprimir en pantalla la funcion sorteada, el paquete al

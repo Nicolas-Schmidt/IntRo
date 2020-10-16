@@ -21,7 +21,7 @@ sesion de trabajo actual. Si adicionalmente se selecciono un paquete en
 \code{package} este sera incorporado al muestreo.}
 
 \item{library}{por defecto es \code{TRUE}. Esto significa que el paquete seleccionado
-queda cargado en la rurta de busqued de nombres de R. Caso contrario el paquete no
+queda cargado en la rurta de busqueda de nombres de R. Caso contrario el paquete no
 va a quedar cargado.}
 }
 \value{
