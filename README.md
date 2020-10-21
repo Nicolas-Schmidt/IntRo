@@ -5,11 +5,12 @@
 
 <!-- badges: start -->
 
-[![CRAN
-status](https://www.r-pkg.org/badges/version/IntRo)](https://CRAN.R-project.org/package=IntRo)
 [![R build
 status](https://github.com/Nicolas-Schmidt/IntRo/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/IntRo/actions)
+[![CRAN
+status](https://www.r-pkg.org/badges/version/IntRo)](https://CRAN.R-project.org/package=IntRo)
 [![](https://img.shields.io/badge/devel%20version-1.4.0-blue.svg)](https://github.com/Nicolas-Schmidt/IntRo)
+[![DOI](https://zenodo.org/badge/257654443.svg)](https://zenodo.org/badge/latestdoi/257654443)
 <!-- badges: end -->
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
