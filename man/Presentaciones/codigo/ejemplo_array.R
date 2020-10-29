@@ -16,4 +16,5 @@ divisor <- function(x){
         }
 dh <- apply(datos, c(2,1), divisor)
 dh
+
 dim(dh)
