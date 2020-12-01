@@ -166,12 +166,13 @@ auto_eval_df <- function(nombre = NULL,
                         if(!all(is.na(df5[seq(2, 300, 2),4]))){
                                 warning("Ejercicio 5: Los valores NA que debe contener la cuarta variable no son correctos.", call. = FALSE)
                         }
-                        base[[5]] <- ifelse(sum(dim(df5))==304 &&
+                        base[[5]] <- ifelse(sum(dim(df5)) == 304 &&
                                                     is.integer(df5[,1]) &&
+                                                    length(levels(df5[,2])) == 5 &&
                                                     length(unique(df5[,3])) > 4 &&
                                                     all(nchar(as.character(df5[,3])[1:5]) > 3) &&
                                                     is.logical(df5[,4]) &&
-                                                    all(is.na(df5[seq(2, 300, 2),4])) , 1, 0)
+                                                    all(is.na(df5[seq(2, 300, 2),4])), 1, 0)
                 }else{
                         warning("Ejercicio 5: El objeto 'df5' no es de tipo data.frame.", call. = FALSE)
                         base[[5]] <- 0
