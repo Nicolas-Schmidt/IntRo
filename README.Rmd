@@ -35,18 +35,18 @@ knitr::opts_chunk$set(
 
 
 Este es un curso que se dicta en la Facultad de Ciencias Sociales de la
-Universidad de la República (Montevideo, Uruguay). En este [link](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Programa_IntRo.pdf) puede ver el programa. El paquete `IntRo` fue desarrollado para este curso. Es para que los estudiantes puedan autoevaluarse los ejercicios del curso. 
+Universidad de la República (Montevideo, Uruguay). En este [link](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/figures/codigo/Programa_IntRo.pdf) puede ver el programa. El paquete `IntRo` fue desarrollado para este curso. Es para que los estudiantes puedan autoevaluarse los ejercicios del curso. 
 
-Hay un instructivo de uso del paquete [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Instructivo_IntRo.pdf).<br />
-Las __presentaciones__ del curso están [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones).<br />
-Código y material adicional [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/Presentaciones/codigo)
+Hay un instructivo de uso del paquete [aquí](https://github.com/Nicolas-Schmidt/IntRo/blob/master/inst/manual/Instructivo_IntRo.pdf).<br />
+Las __presentaciones__ del curso están [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/inst/presentaciones).<br />
+Código y material adicional [aquí](https://github.com/Nicolas-Schmidt/IntRo/tree/master/man/figures/codigo)
 
 Ejercicios:
 
-1. Módulo [vectores](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_vectores.pdf)
-2. Módulo [matrices](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_matrices.pdf)
-3. Módulo [data.frame](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_dataframe.pdf)
-4. Módulo [listas](https://github.com/Nicolas-Schmidt/IntRo/blob/master/man/Ejercicios/Ejercicios_Modulo_listas.pdf)
+1. Módulo [vectores](https://github.com/Nicolas-Schmidt/IntRo/blob/master/inst/ejercicios/Ejercicios_M1.pdf)
+2. Módulo [matrices](https://github.com/Nicolas-Schmidt/IntRo/blob/master/inst/ejercicios/Ejercicios_M2.pdf)
+3. Módulo [data.frame](https://github.com/Nicolas-Schmidt/IntRo/blob/master/inst/ejercicios/Ejercicios_M3.pdf)
+4. Módulo [listas](https://github.com/Nicolas-Schmidt/IntRo/blob/master/inst/ejercicios/Ejercicios_M4.pdf)
 
  <br />
 
