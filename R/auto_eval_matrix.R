@@ -45,6 +45,18 @@
 #'                  enviar = FALSE,
 #'                  intentos = 3,
 #'                  summary = FALSE)
+#'
+#' ## --------------------
+#' ## ENVIAR EL EJERCICIO
+#' ## --------------------
+#'
+#' # auto_eval_matrix(nombre   = "Nicolas",
+#' #                  apellido = "Schmidt",
+#' #                  mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#' #                  enviar   = TRUE,                 ## VALOR NECESARIO!
+#' #                  intentos = 3,
+#' #                  summary  = FALSE)
+#'
 #' @export
 
 auto_eval_matrix <- function(nombre = NULL,
@@ -223,13 +235,12 @@ auto_eval_matrix <- function(nombre = NULL,
                 }
                 nota <- paste(notaF, "sobre 100")
                 nota_escala <- escala(notaF)
-                email <- gmailr::mime(
-                        To = mail,
-                        Bcc = "nicoschlab@gmail.com",
-                        From = mail,
-                        Subject = paste("Curso IntRo: Resultado de Ejercicio 2 de", nombre, apellido),
-                        body = paste("Su nota final del Ejercicio II (Modulo matrices) es:", nota,". En la escala de notas equivale a un:", nota_escala))
-                gmailr::send_message(email)
+                send_IntRo(mail     = mail,
+                           nombre   = nombre,
+                           apellido = apellido,
+                           puntaje  = nota,
+                           escala   = nota_escala,
+                           modulo   = 2)
         }
 
 }

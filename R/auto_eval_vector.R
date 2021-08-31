@@ -39,12 +39,24 @@
 #'
 #' vec1 <- seq(2, 20, 2)
 #'
-#' auto_eval_vector(nombre = "Nicolas",
-#'                  apellido = "Schmidt",
-#'                  mail = NULL,
-#'                  enviar = FALSE,
-#'                  intentos = 3,
-#'                  summary = TRUE)
+#' auto_eval_vector(nombre    = "Nicolas",
+#'                  apellido  = "Schmidt",
+#'                  mail      = NULL,
+#'                  enviar    = FALSE,
+#'                  intentos  = 3,
+#'                  summary   = TRUE)
+#'
+#' ## --------------------
+#' ## ENVIAR EL EJERCICIO
+#' ## --------------------
+#'
+#' # auto_eval_vector(nombre   = "Nicolas",
+#' #                  apellido = "Schmidt",
+#' #                  mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#' #                  enviar   = TRUE,                 ## VALOR NECESARIO!
+#' #                  intentos = 3,
+#' #                  summary  = FALSE)
+#'
 #' @export
 
 auto_eval_vector <- function(nombre = NULL,
@@ -191,13 +203,13 @@ auto_eval_vector <- function(nombre = NULL,
                 }
                 base[[12]] <- ifelse(length(vec12)==1 && substr(vec12,2,2)=="-", 1, 0)
         }
-        base1 <- do.call(rbind, base)
-        base2<- cbind(base1, base1[,1], base1[,1])
-        colnames(base2)<-c("Correcta", "Incorrecta", "Incompleta")
-        base2[,1] <- ifelse(is.na(base2[,1]) | base2[,1]==0, 0, 1)
-        base2[,2] <- ifelse(is.na(base2[,2]) | base2[,2]==1, 0, 1)
+        base1     <- do.call(rbind, base)
+        base2     <- cbind(base1, base1[,1], base1[,1])
+        colnames(base2) <- c("Correcta", "Incorrecta", "Incompleta")
+        base2[,1] <- ifelse(is.na(base2[,1]) | base2[,1] == 0, 0, 1)
+        base2[,2] <- ifelse(is.na(base2[,2]) | base2[,2] == 1, 0, 1)
         base2[,3] <- ifelse(is.na(base2[,3]), 1, 0)
-        base2 <- rbind(base2, TOTAL = colSums(base2))
+        base2     <- rbind(base2, TOTAL = colSums(base2))
 
         if(summary == TRUE){
                 cat('\n============================================')
@@ -226,13 +238,13 @@ auto_eval_vector <- function(nombre = NULL,
                 }
                 nota <- paste(notaF, "sobre 100")
                 nota_escala <- escala(notaF)
-                email <- gmailr::mime(
-                        To = mail,
-                        Bcc = "nicoschlab@gmail.com",
-                        From = mail,
-                        Subject = paste("Curso IntRo: Resultado de Ejercicio 1 de", nombre, apellido),
-                        body = paste("Su nota final del Ejercicio I (Modulo vectores) es:", nota,". En la escala de notas equivale a un:", nota_escala))
-                gmailr::send_message(email)
+                send_IntRo(mail     = mail,
+                           nombre   = nombre,
+                           apellido = apellido,
+                           puntaje  = nota,
+                           escala   = nota_escala,
+                           modulo   = 1)
+
         }
 
 }

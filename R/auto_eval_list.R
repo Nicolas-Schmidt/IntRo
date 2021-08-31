@@ -47,6 +47,18 @@
 #'                  enviar = FALSE,
 #'                  intentos = 3,
 #'                  summary = TRUE)
+#'
+#' ## --------------------
+#' ## ENVIAR EL EJERCICIO
+#' ## --------------------
+#'
+#' # auto_eval_list(nombre   = "Nicolas",
+#' #                apellido = "Schmidt",
+#' #                mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#' #                enviar   = TRUE,                 ## VALOR NECESARIO!
+#' #                intentos = 3,
+#' #                summary  = FALSE)
+#'
 #' @export
 
 auto_eval_list <- function(nombre = NULL,
@@ -254,13 +266,12 @@ auto_eval_list <- function(nombre = NULL,
                 }
                 nota <- paste(notaF, "sobre 100")
                 nota_escala <- escala(notaF)
-                email <- gmailr::mime(
-                        To = mail,
-                        Bcc = "nicoschlab@gmail.com",
-                        From = mail,
-                        Subject = paste("Curso IntRo: Resultado de Ejercicio 4 de", nombre, apellido),
-                        body = paste("Su nota final del Ejercicio IV (Modulo listas) es:", nota,". En la escala de notas equivale a un:", nota_escala))
-                gmailr::send_message(email)
+                send_IntRo(mail     = mail,
+                           nombre   = nombre,
+                           apellido = apellido,
+                           puntaje  = nota,
+                           escala   = nota_escala,
+                           modulo   = 4)
         }
 
 }

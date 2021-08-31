@@ -59,12 +59,24 @@ Es una funcion que permite autoevaluar los ejercicios del modulo
 
 vec1 <- seq(2, 20, 2)
 
-auto_eval_vector(nombre = "Nicolas",
-                 apellido = "Schmidt",
-                 mail = NULL,
-                 enviar = FALSE,
-                 intentos = 3,
-                 summary = TRUE)
+auto_eval_vector(nombre    = "Nicolas",
+                 apellido  = "Schmidt",
+                 mail      = NULL,
+                 enviar    = FALSE,
+                 intentos  = 3,
+                 summary   = TRUE)
+
+## --------------------
+## ENVIAR EL EJERCICIO
+## --------------------
+
+# auto_eval_vector(nombre   = "Nicolas",
+#                  apellido = "Schmidt",
+#                  mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#                  enviar   = TRUE,                 ## VALOR NECESARIO!
+#                  intentos = 3,
+#                  summary  = FALSE)
+
 }
 \author{
 Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}

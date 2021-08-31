@@ -65,6 +65,18 @@ auto_eval_matrix(nombre = "Nicolas",
                  enviar = FALSE,
                  intentos = 3,
                  summary = FALSE)
+
+## --------------------
+## ENVIAR EL EJERCICIO
+## --------------------
+
+# auto_eval_matrix(nombre   = "Nicolas",
+#                  apellido = "Schmidt",
+#                  mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#                  enviar   = TRUE,                 ## VALOR NECESARIO!
+#                  intentos = 3,
+#                  summary  = FALSE)
+
 }
 \author{
 Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}

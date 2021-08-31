@@ -65,6 +65,21 @@ auto_eval_df(nombre = "Nicolas",
                  enviar = FALSE,
                  intentos = 3,
                  summary = TRUE)
+
+## --------------------
+## ENVIAR EL EJERCICIO
+## --------------------
+
+# auto_eval_df(nombre   = "Nicolas",
+#              apellido = "Schmidt",
+#              mail     = "tu_mail.gmail.com",  ## VALOR NECESARIO!
+#              enviar   = TRUE,                 ## VALOR NECESARIO!
+#              intentos = 3,
+#              summary  = FALSE)
+
+
+
+
 }
 \author{
 Nicolas Schmidt \email{nschmidt@cienciassociales.edu.uy}
