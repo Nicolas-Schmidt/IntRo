@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Coerciones implicitas — ci • IntRo</title>
+<title>Pauta de ejercicios del curso IntRo — ejercicios • IntRo</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,24 +46,8 @@
 
 
 
-<meta property="og:title" content="Coerciones implicitas — ci" />
-<meta property="og:description" content="Esta funcion devuelve el resultado del tipo de datos resultante
-    de combinar en un vector atomico datos de distinto tipo. Los tipos posibles
-    de datos que puede tener un vector atomico son:
-
-logical
-integer
-double
-raw
-complex
-character
-
-
-Cuando se combinan datos de distinto tipo R resuelve coercionar el vector
-    hacia uno de los tipos que se estan combianndo. Este resultado no es aleatorio
-    sino que es resultado de una regla clara en el lenguaje sobre 'jerarquia' de
-    tipos de datos. La funcion con la que se verifica el tipo de dato de un
-    vector atomico es typeof()" />
+<meta property="og:title" content="Pauta de ejercicios del curso IntRo — ejercicios" />
+<meta property="og:description" content="Permite acceder a los repartidos de ejercicios de cada modulo del curso" />
 <meta property="og:image" content="https://nicolas-schmidt.github.io/IntRo/logo.png" />
 
 
@@ -142,64 +126,47 @@ Cuando se combinan datos de distinto tipo R resuelve coercionar el vector
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>Coerciones implicitas</h1>
-    <small class="dont-index">Source: <a href='https://github.com/Nicolas-Schmidt/IntRo/blob/master/R/ci.R'><code>R/ci.R</code></a></small>
-    <div class="hidden name"><code>ci.Rd</code></div>
+    <h1>Pauta de ejercicios del curso IntRo</h1>
+    <small class="dont-index">Source: <a href='https://github.com/Nicolas-Schmidt/IntRo/blob/master/R/open.R'><code>R/open.R</code></a></small>
+    <div class="hidden name"><code>ejercicios.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Esta funcion devuelve el resultado del tipo de datos resultante
-    de combinar en un vector atomico datos de distinto tipo. Los tipos posibles
-    de datos que puede tener un vector atomico son:</p>
-<p></p><ul>
-<li><p><code>logical</code></p></li>
-<li><p><code>integer</code></p></li>
-<li><p><code>double</code></p></li>
-<li><p><code>raw</code></p></li>
-<li><p><code>complex</code></p></li>
-<li><p><code>character</code></p></li>
-</ul>
-
-<p>Cuando se combinan datos de distinto tipo R resuelve coercionar el vector
-    hacia uno de los tipos que se estan combianndo. Este resultado no es aleatorio
-    sino que es resultado de una regla clara en el lenguaje sobre 'jerarquia' de
-    tipos de datos. La funcion con la que se verifica el tipo de dato de un
-    vector atomico es <code><a href='https://rdrr.io/r/base/typeof.html'>typeof()</a></code></p>
+    <p>Permite acceder a los repartidos de ejercicios de cada modulo del curso</p>
     </div>
 
-    <pre class="usage"><span class='fu'>ci</span><span class='op'>(</span>type <span class='op'>=</span> <span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"logical"</span>, <span class='st'>"integer"</span>, <span class='st'>"double"</span>, <span class='st'>"raw"</span>, <span class='st'>"complex"</span>, <span class='st'>"character"</span><span class='op'>)</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>ejercicios</span><span class='op'>(</span>modulo <span class='op'>=</span> <span class='fl'>1</span><span class='op'>)</span></pre>
 
     <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
     <table class="ref-arguments">
     <colgroup><col class="name" /><col class="desc" /></colgroup>
     <tr>
-      <th>type</th>
-      <td><p>vector de caracteres mayor o igual a dos que indica el tipo de datos
-se desea testear.</p></td>
+      <th>modulo</th>
+      <td><p>valor numerico que indica el repartido de ejercicios que se desea consultar.</p><dl>
+         <dt>1</dt><dd><p>Vectores</p></dd>
+         <dt>2</dt><dd><p>Matrices</p></dd>
+         <dt>3</dt><dd><p>Data Frame</p></dd>
+         <dt>4</dt><dd><p>Listas</p></dd>
+        
+</dl></td>
     </tr>
     </table>
 
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
+    <h2 class="hasAnchor" id="value"><a class="anchor" href="#value"></a>Value</h2>
 
-    <p>http://bit.ly/Instructivo_package_IntRo</p>
+    <p>Abre un archivo .pdf en el lector de pdf que se tenga instalado.</p>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+
+    <p>Si se pone por valor del argumento <code>modulo</code> un numero fuera del rango se va a
+    abrir la carpeta en la que estan los ejercicios y desde ahi poder seleccionar la que se desea.</p>
     <h2 class="hasAnchor" id="author"><a class="anchor" href="#author"></a>Author</h2>
 
     <p>Nicolas Schmidt <a href='mailto:nschmidt@cienciassociales.edu.uy'>nschmidt@cienciassociales.edu.uy</a></p>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>ci</span><span class='op'>(</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;             logical   integer   double    raw       complex   character
-#&gt;             --------- --------- --------- --------- --------- ---------
-#&gt; logical   | logical                                                    
-#&gt; integer   | integer   integer                                          
-#&gt; double    | double    double    double                                 
-#&gt; raw       | logical   integer   double    raw                          
-#&gt; complex   | complex   complex   complex   complex   complex            
-#&gt; character | character character character character character character</div><div class='input'><span class='fu'>ci</span><span class='op'>(</span><span class='fu'><a href='https://rdrr.io/r/base/c.html'>c</a></span><span class='op'>(</span><span class='st'>"character"</span>, <span class='st'>"numeric"</span><span class='op'>)</span><span class='op'>)</span>
-</div><div class='output co'>#&gt;             character numeric  
-#&gt;             --------- ---------
-#&gt; character | character          
-#&gt; numeric   | character double   </div></pre>
+    <pre class="examples"><div class='input'><span class='co'># ejercicios()</span>
+<span class='co'># ejercicios(modulo = 1)</span>
+</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="pkgdown-sidebar">
     <nav id="toc" data-toggle="toc" class="sticky-top">
