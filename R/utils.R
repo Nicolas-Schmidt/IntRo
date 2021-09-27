@@ -37,6 +37,15 @@ version <- function(){
         unlist(strsplit(bad, "-"))[2]
 }
 
+body_modulo <- function(modulo){
+
+        if(modulo == 1) {return("Ejercicio I (Modulo vectores)")}
+        if(modulo == 2) {return("Ejercicio II (Modulo matrices)")}
+        if(modulo == 3) {return("Ejercicio III (Modulo data.frame)")}
+        if(modulo == 4) {return("Ejercicio IV (Modulo lista)")}
+
+}
+
 send_IntRo <- function(mail,
                        nombre,
                        apellido,
@@ -48,11 +57,12 @@ send_IntRo <- function(mail,
         apellido <- tools::toTitleCase(tolower(apellido))
         fecha    <- blastula::add_readable_time()
         imagen   <- blastula::add_image(system.file("img", "logo.png", package = "IntRo"), width = 80)
+        bm       <- body_modulo(modulo = modulo)
         email    <- blastula::compose_email(body = blastula::md(glue::glue(
 
         "Hola {nombre} {apellido}!,
 
-        Su nota final del Ejercicio I (Modulo vectores) es: **{puntaje}**.
+        Su nota final del {bm} es: **{puntaje}**.
         En la escala de notas equivale a un: **{escala}**.
 
         Recuerde que puede consultar el curso [aqui](https://nicolas-schmidt.github.io/IntRo//index.html)
@@ -66,9 +76,16 @@ send_IntRo <- function(mail,
                 from = mail,
                 cc = "nicoschlab@gmail.com",
                 subject = asunto,
-                credentials = creds_file("email_creds")
+                credentials = blastula::creds_file("email_creds")
         )
         invisible(file.remove("email_creds"))
 }
+
+
+
+
+
+
+
 
 

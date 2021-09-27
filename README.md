@@ -9,7 +9,7 @@
 status](https://github.com/Nicolas-Schmidt/IntRo/workflows/R-CMD-check/badge.svg)](https://github.com/Nicolas-Schmidt/IntRo/actions)
 [![CRAN
 status](https://www.r-pkg.org/badges/version/IntRo)](https://CRAN.R-project.org/package=IntRo)
-[![](https://img.shields.io/badge/devel%20version-1.5.0-orange.svg)](https://github.com/Nicolas-Schmidt/IntRo)
+[![](https://img.shields.io/badge/devel%20version-1.5.1-orange.svg)](https://github.com/Nicolas-Schmidt/IntRo)
 [![DOI](https://zenodo.org/badge/257654443.svg)](https://zenodo.org/badge/latestdoi/257654443)
 <!-- badges: end -->
 
@@ -45,7 +45,7 @@ Ejercicios:
 
 <br />
 
-#### *_Docente_*
+#### **Docente**
 
 Nicolás Schmidt.  
 Mail: <nicoschlab@gmail.com>, <nschmidt@cienciassociales.edu.uy>
@@ -58,9 +58,7 @@ print("Bienvenidos al curso IntRo")
 ```
 
 <center>
-
 <img src="https://raw.githubusercontent.com/Nicolas-Schmidt/IntRo/master/man/figures/animation.gif"></a>
-
 </center>
 
 <br />
@@ -69,7 +67,7 @@ print("Bienvenidos al curso IntRo")
 
 <br />
 
------
+------------------------------------------------------------------------
 
 En [este](https://github.com/Nicolas-Schmidt/Evaluaciones_IntRo) link se
 encuentras las evaluaciones que los estudiantes de las distintas
