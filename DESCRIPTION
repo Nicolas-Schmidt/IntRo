@@ -1,7 +1,7 @@
 Package: IntRo
 Type: Package
 Title: Auto-Evaluacion de los ejericios del curso IntRo
-Version: 1.5.1
+Version: 1.5.2
 Author: Nicolas Schmidt [aut, cre]
 Maintainer: Nicolas Schmidt <nschmidt@cienciassociales.edu.uy>                
 Description: Conjunto de funciones que permiten auto evaluar un conjunto de ejercicios

@@ -210,26 +210,25 @@ auto_eval_list <- function(nombre = NULL,
          }
 
         if(vector_objetos[6] %in% espacio){
-                 if(is.list(lista6)){
-                         if(length(lista6)==1){
-                                 if(sum(dim(lista6[[1]]))!=8){
-                                         warning("Ejercicio 6: La dimension del objeto guardado no es correcta.", call. = FALSE)
-                                 }
-                                 if(!all(lista6[[1]][,1]==c("ARG", "BRA", "URY"))){
-                                         warning("Ejercicio 6: El objeto guardado no es correcto.", call. = FALSE)
-                                 }
-                                 base[[6]] <- ifelse(sum(dim(lista6[[1]]))==8 &&
-                                                             all(lista6[[1]][,1]==c("ARG", "BRA", "URY")), 1, 0)
-                         }else{
-                                 warning("Ejercicio 6: El largo de la lista no es correcto.", call. = FALSE)
-                                 base[[6]] <- 0
-                         }
-                 } else{
-                         warning("Ejercicio 6: El objeto 'lista6' debe ser de tipo 'list'.", call. = FALSE)
-                         base[[6]] <- 0
-                 }
-         }
-
+                if(is.list(lista6)){
+                        if(length(lista6) == 1){
+                                if(sum(dim(lista6[[1]])) != 7){
+                                        warning("Ejercicio 6: La dimension del objeto guardado no es correcta.", call. = FALSE)
+                                }
+                                if(!(lista6[[1]][,1] == "ARG")){
+                                        warning("Ejercicio 6: El objeto guardado no es correcto.", call. = FALSE)
+                                }
+                                base[[6]] <- ifelse(sum(dim(lista6[[1]])) == 7 &&
+                                                            lista6[[1]][,1] == "ARG", 1, 0)
+                        }else{
+                                warning("Ejercicio 6: El largo de la lista no es correcto.", call. = FALSE)
+                                base[[6]] <- 0
+                        }
+                } else{
+                        warning("Ejercicio 6: El objeto 'lista6' debe ser de tipo 'list'.", call. = FALSE)
+                        base[[6]] <- 0
+                }
+        }
 
         base1 <- do.call(rbind, base)
         base2<- cbind(base1, base1[,1], base1[,1])
