@@ -126,7 +126,7 @@ auto_eval_df <- function(nombre = NULL,
                                 warning("Ejercicio 3: El nombre de la tercer variableno es correcto.", call. = FALSE)
                         }
                         if(any(abs(df3[,1] - mean(df3[,1])) != df3[,3]))  {
-                                warning("Ejercicio 3: El calculo de la variable no es correcto. Deve restar el valor de la media a cada valor. Y ese valor debe estar en valor absoluto", call. = FALSE)
+                                warning("Ejercicio 3: El calculo de la variable no es correcto. Debe restar el valor de la media a cada valor. Y ese valor debe estar en valor absoluto", call. = FALSE)
                         }
                         base[[3]] <- ifelse(sum(dim(df3))==53 &&
                                                     names(df3)[3]=="speedMM" &&
